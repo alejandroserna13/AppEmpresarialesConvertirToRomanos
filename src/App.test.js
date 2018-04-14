@@ -13,25 +13,25 @@ describe('Pruebas de renderización', () => {
 
 describe('Pruebas al convertidor', () => {
 
-  it('prueba 1', () => {
+  it('convertir 25 en XXV', () => {
     var numero = 25
     var roman = convertToRoman(numero)
     expect(roman).toEqual("XXV")  
   });
 
-  it('prueba 2', () => {
+  it('Mostrar vacío al ingresar 0', () => {
     var numero = 0
     var roman = convertToRoman(numero)
     expect(roman).toEqual("")  
   });
 
-  it('prueba 3', () => {
+  it('Convertir 1 en I', () => {
     var numero = 1
     var roman = convertToRoman(numero)
     expect(roman).toEqual("I")  
   });
 
-  it('prueba 4', () => {
+  it('Convertir 10 a X', () => {
     var numero = 10
     var roman = convertToRoman(numero)
     expect(roman).toEqual("X")  
